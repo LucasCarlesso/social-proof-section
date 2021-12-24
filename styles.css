@@ -1,0 +1,136 @@
+:root {
+/* ## Colors */
+/* ### Primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+/* ### Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* basic styles */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-size: 0.9375rem;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(/images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    color: var(--very-dark-magenta);
+}
+
+main {
+    width: min(88%, 30rem);
+    margin-inline: auto;
+    margin-block-start: 5rem;
+    margin-block-end: 6.25rem;
+}
+
+main > header {
+    text-align: center;
+    margin-block: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-block: 0.66em;
+    line-height: 1.1em;
+}
+
+.introduction-p {
+    font-size: 0.9rem;
+    margin-block: 1em;
+    line-height: 1.6em;
+}
+
+ul[aria-label="ratings"] {
+    margin-block: 3rem;
+}
+
+ul[aria-label="ratings"] li {
+    background-color: var(--light-grayish-magenta);
+    margin-block: 0.9375rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding-block: 1em;
+    border-radius: 0.5em;
+}
+
+ul[aria-label="ratings"] li p {
+    margin-block-start: 0.66em;
+}
+
+img {
+    max-width: 100%;
+    margin-inline: 0.3125rem;
+}
+
+ul[aria-label="testimonials"] li {
+    max-width: 100%;
+    aspect-ratio: 1.336032;
+
+    background-color: var(--very-dark-magenta);
+    color: white;
+
+    margin-block: 0.9375rem;
+    padding: 1.4em;
+    border-radius: 0.5em;
+    font-size: 14.5px;
+
+}
+
+ul[aria-label="testimonials"] img {
+    border-radius: 50%;
+    float: left;
+    height: 100%;
+}
+
+ul[aria-label="testimonials"] header {
+    margin-block: 2em;
+    height: 45px;
+}
+
+ul[aria-label="testimonials"] header p {
+    margin-inline-start: 5em;
+}
+
+.testimony-author {
+    font-weight: bold;
+    margin-block: 0.5em;
+}
+
+.testimony-author-status {
+    color: var(--soft-pink);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
